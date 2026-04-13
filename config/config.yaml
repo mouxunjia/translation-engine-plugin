@@ -1,0 +1,58 @@
+﻿# Translation Engine Plugin Configuration
+# Version: 1.0.0
+
+translation:
+  primary_engine: ollama  # ollama / cloud
+  ollama:
+    model: qwen2.5:0.5b   # 推荐: qwen2.5:0.5b (快速) 或 qwen3.5:4b (高质量)
+    endpoint: http://localhost:11434
+    timeout: 30
+    fallback_models:
+      - qwen3.5:4b        # 高质量备用
+      - deepseek-r1:7b    # 最高质量备用
+    fallback_enabled: true
+  cloud:
+    provider: deepl  # deepl / google
+    api_key: ""
+    fallback_enabled: true
+
+language:
+  user_mother_tongue: zh-CN
+  assistant_languages:
+    - en-US
+  auto_detect: true
+  third_language_enabled: false
+  third_language: ja-JP
+
+cultural_filter:
+  enabled: true
+  sensitive_action: filter_and_log  # filter / warn / filter_and_log
+  log_path: data/sensitive_logs.json
+  custom_rules: []
+
+push:
+  enabled: true
+  obsidian_notification: true
+  system_notification: true
+  daily_review_time: "09:00"
+  review_count: 5
+
+tools:
+  notebook: true
+  reminder: true
+  term_library: true
+  culture_archive: true
+  speaking_practice: true
+  template_library: true
+  realtime_translate: true
+
+logging:
+  level: INFO
+  file: data/plugin.log
+  max_size_mb: 10
+  backup_count: 3
+
+performance:
+  cache_size: 1000
+  batch_size: 10
+  request_timeout: 30

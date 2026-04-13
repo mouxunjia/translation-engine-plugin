@@ -1,0 +1,14 @@
+﻿{
+  "id": "translation-engine-plugin",
+  "name": "Translation Engine",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Professional translation plugin for diplomatic scenarios. Supports local Ollama + cloud fallback, cultural sensitivity detection, and daily review system.",
+  "author": "mouxunjia",
+  "authorUrl": "https://github.com/mouxunjia",
+  "fundingUrl": {
+    "GitHub Sponsor": "https://github.com/sponsors/mouxunjia",
+    "Buy Me a Coffee": "https://buymeacoffee.com/mouxunjia"
+  },
+  "isDesktopOnly": false
+}
