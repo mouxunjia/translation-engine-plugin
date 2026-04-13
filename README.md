@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Translation Engine Plugin
 
 Professional translation plugin for diplomatic scenarios.
@@ -25,3 +26,7 @@ Professional translation plugin for diplomatic scenarios.
 
 ## License
 Copyright (c) 2024 Translation Engine Team
+=======
+# translation-engine-plugin
+Professional translation plugin for diplomatic scenarios
+>>>>>>> 902a414ca539d2230523a7ded632da7d77512444
